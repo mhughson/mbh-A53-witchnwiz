@@ -1,7 +1,11 @@
 # Witch n' Wiz Action53 NESDev Compo 2020/21 Edition
 This is the version of Witch n' Wiz (www.witchnwiz.com) that was entered into the NESDev competition in March 2021, and won 2nd place. It is *not* the full retail version of the game released in November 2021.
 
+![nes2_nesdev_title](https://user-images.githubusercontent.com/310185/162885182-a24b8f5e-829f-4db4-af43-dedc83e040cf.gif)
+
 For the NESDev Competition, entries must be compatible with the Action 53 Mapper (Mapper 28), which may not be straight forward depending on you technical backround. Witch n' Wiz was targetting Mapper 1 (MMC1) prior to the competition, and the transition was not straight forward for me. My hope is that this project can be a starting point for others wanting to create NES games in C for the compo.
+
+![nes2_nesdev_shortgameplay_loop_small](https://user-images.githubusercontent.com/310185/162885082-1599c2c1-6614-4600-ab47-38f2e726ee0b.gif)
 
 # Credits (beyond actual game credits)
 
@@ -24,6 +28,9 @@ I recommend that you associate ".nes" files with your prefered emulator. This wi
 # Things of Note
 
 1. The Root directory is almost entirely the compiler for the game (CC65 toolchain). The game itself can be found in the "game" sub-directory.
-2. Compiling the project happens in compile_master.bat.
-3. CHR data is split arcross multiple banks (chrrom_bank0.chr, chrrom_bank1.chr, ...).
-4. You can add addtional banks of CHR in compile_master.bat.
+2. Compiling the project happens in [compile_master.bat](game/compile_master.bat).
+3. CHR data is split arcross multiple banks ([chrrom_bank0.chr](game/chrrom_bank0.chr), chrrom_bank1.chr, ...).
+4. You can add addtional banks of CHR in [compile_master.bat](game/compile_master.bat).
+5. Code is also spread across multiple banks named [game/PRG0.c](PRG0.c), PRG1.c, ...
+6. [game/main.c](main.c) is the fixed bank.
+7. Bank layout from the MMC1 version of the game to the Action53 version changed, and to make things simple I just redefine what each bank number actually maps to here: https://github.com/mhughson/mbh-A53-witchnwiz/blob/master/game/main.h#L171
