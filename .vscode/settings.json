@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "level_select_menu.h": "c",
+        "ending.h": "c",
+        "new_game_menu.h": "c",
+        "password_entry.h": "c",
+        "sound_test.h": "c",
+        "title_screen.h": "c",
+        "pico_credits_screen.h": "c"
+    }
+}

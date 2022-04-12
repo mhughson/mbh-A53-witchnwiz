@@ -1,0 +1,123 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "run": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build GFX",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "gfx": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Code",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "code": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Code & Run",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "code": "true",
+                    "run": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Audio",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "audio": "true",
+                    "code": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat"
+        },
+        {
+            "label": "Build Audio & Run",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "audio": "true",
+                    "code": "true",
+                    "run": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat"
+        },
+        {
+            "label": "Build All",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "audio": "true",
+                    "maps": "true",
+                    "gfx": "true",
+                    "code": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat"
+        },
+        {
+            "label": "Build All & Run",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "audio": "true",
+                    "code": "true",
+                    "maps": "true",
+                    "gfx": "true",
+                    "run": "true"
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Maps",
+            "type": "shell",
+            "group": "build",
+            "options": {
+                "env": {
+                    "maps": "true",
+                }
+            },
+            "command": ".\\game\\compile_bootstrap.bat",
+            "problemMatcher": []
+        },
+    ]
+}
