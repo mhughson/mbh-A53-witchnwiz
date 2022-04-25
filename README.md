@@ -1,6 +1,8 @@
 # Witch n' Wiz Action53 NESDev Compo 2020/21 Edition
 This is the version of Witch n' Wiz (www.witchnwiz.com) that was entered into the NESDev competition in March 2021, and won 2nd place. It is *not* the full retail version of the game released in November 2021.
 
+My goal is to provide this as a starting point for other NESDev coding works in C, who want to make a nesdev compeition entry requiring Mapper 28 compatibility.
+
 ![nes2_nesdev_title](https://user-images.githubusercontent.com/310185/162885182-a24b8f5e-829f-4db4-af43-dedc83e040cf.gif)
 
 For the NESDev Competition, entries must be compatible with the [Action 53 Mapper (Mapper 28)](https://www.nesdev.org/wiki/Action_53_mapper), which may not be straight forward depending on you technical backround. Witch n' Wiz was targetting Mapper 1 (MMC1) prior to the competition, and the transition was not straight forward for me. My hope is that this project can be a starting point for others wanting to create NES games in C for the compo.
@@ -16,7 +18,9 @@ For the NESDev Competition, entries must be compatible with the [Action 53 Mappe
 
 # Compiling
 
-Currently only Windows is supported. Requires Python to be installed and for the "python" command to work. You can test this by opening command prompt and simply typing "python" without quotes. If this is unrecognized, you need to install Python.)=
+Currently only Windows is supported. It requires Python to be installed and for the "python" command to work. You can test this by opening command prompt and simply typing "python" without quotes. If this is unrecognized, you need to install Python.
+
+How to build:
 
 1. In VSCode open root folder of project.
 2. Press Ctrl + Shift + B to open the "Built Task to Run" prompt.
