@@ -3,6 +3,8 @@ This is the version of Witch n' Wiz (www.witchnwiz.com) that was entered into th
 
 My goal is to provide this as a starting point for other NESDev coding works in C, who want to make a nesdev compeition entry requiring Mapper 28 compatibility.
 
+However, targetting Mapper 0 (NROM) is *by far* the simplest approach if you are new to NES development. The downside is you will be limited in terms of ROM size.
+
 ![nes2_nesdev_title](https://user-images.githubusercontent.com/310185/162885182-a24b8f5e-829f-4db4-af43-dedc83e040cf.gif)
 
 For the NESDev Competition, entries must be compatible with the [Action 53 Mapper (Mapper 28)](https://www.nesdev.org/wiki/Action_53_mapper), which may not be straight forward depending on you technical backround. Witch n' Wiz was targetting Mapper 1 (MMC1) prior to the competition, and the transition was not straight forward for me. My hope is that this project can be a starting point for others wanting to create NES games in C for the compo.
