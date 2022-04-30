@@ -7,10 +7,13 @@
 
 #define MAX_BANK_DEPTH 10
 
-#define MIRROR_MODE_1_SCREEN_LOWER 0
-#define MIRROR_MODE_1_SCREEN_UPPER 1
-#define MIRROR_MODE_VERT 2
-#define MIRROR_MODE_HORZ 3
+// NOTE: Only the right most 2 bits are for mirroring. The other bits
+//       need to match was your game uses and was set during reset in
+//       crt.s (see "Mapper reset")
+#define MIRROR_MODE_1_SCREEN_LOWER 0x2c
+#define MIRROR_MODE_1_SCREEN_UPPER 0x2d
+#define MIRROR_MODE_VERT 0x2e
+#define MIRROR_MODE_HORZ 0x2f
 
 extern unsigned char bankLevel;
 extern unsigned char bankBuffer[MAX_BANK_DEPTH];

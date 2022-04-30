@@ -181,6 +181,7 @@ clearRAM:
 	
 	lda #$80		; mode
 	sta A53_REG_SELECT
+	; if you change this value, make sure to update the MIRROR_MODE fields in bank_helpers.h
 	lda #%101111	; 
 	sta A53_REG_VALUE
 	
