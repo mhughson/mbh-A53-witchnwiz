@@ -7,6 +7,9 @@
 
 #define MAX_BANK_DEPTH 10
 
+#define MIRROR_MODE_VERT 2
+#define MIRROR_MODE_HORZ 3
+
 extern unsigned char bankLevel;
 extern unsigned char bankBuffer[MAX_BANK_DEPTH];
 
@@ -51,7 +54,9 @@ void __fastcall__ set_nmi_chr_tile_bank(unsigned char bank);
 // Don't change the chr bank at the top of the screen.
 void __fastcall__ unset_nmi_chr_tile_bank(void);
 
-
+// Change the current mirror mode.
+// See: MIRROR_MODE_* at top of this file for "mode" params.
+void __fastcall__ set_mirror_mode(unsigned char mode);
 
 // some things deleted
 

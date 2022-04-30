@@ -616,17 +616,17 @@ void fade_from_black_fast()
 	delay(FAST_FADE_DELAY);
 }
 
-void fade_to_white()
-{
-	pal_bright(5);
-	delay(FAST_FADE_DELAY);
-	pal_bright(6);
-	delay(FAST_FADE_DELAY);
-	pal_bright(7);
-	delay(FAST_FADE_DELAY);
-	pal_bright(8);
-	delay(FAST_FADE_DELAY);
-}
+// void fade_to_white()
+// {
+// 	pal_bright(5);
+// 	delay(FAST_FADE_DELAY);
+// 	pal_bright(6);
+// 	delay(FAST_FADE_DELAY);
+// 	pal_bright(7);
+// 	delay(FAST_FADE_DELAY);
+// 	pal_bright(8);
+// 	delay(FAST_FADE_DELAY);
+// }
 
 #define SLOW_FADE_DELAY 10
 void fade_from_white()
