@@ -50,7 +50,10 @@ for f in files:
     mapname = os.path.basename(f)
     mapname = os.path.splitext(mapname)[0]
     #TODO: Check time stamps before running to speed this up. It is very slow.
-    subprocess.check_call([r"C:\\Program Files\\Tiled\\tiled.exe", "--export-map", f, mapname + ".json"])
+    if (sys.platform == 'win32'):
+        subprocess.check_call([r"C:\\Program Files\\Tiled\\tiled.exe", "--export-map", f, mapname + ".json"])
+    else:
+        subprocess.check_call(["/usr/bin/env", "tiled", "--export-map", f, mapname + ".json"])
 
 
 files = [f for f in os.listdir('.') if os.path.isfile(f) and f.endswith(".json") and f.startswith(tuple(room_type_order))]
