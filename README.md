@@ -20,7 +20,9 @@ For the NESDev Competition, entries must be compatible with the [Action 53 Mappe
 
 # Compiling
 
-Currently only Windows is supported. It requires Python to be installed and for the "python" command to work. You can test this by opening command prompt and simply typing "python" without quotes. If this is unrecognized, you need to install Python.
+## Windows
+
+It requires Python to be installed and for the "python" command to work. You can test this by opening command prompt and simply typing "python" without quotes. If this is unrecognized, you need to install Python.
 
 How to build:
 
@@ -32,6 +34,15 @@ How to build:
 I recommend that you associate ".nes" files with your prefered emulator. This will allow you to use the "Build & Run" commands to automatically open the game after building.
 
 ![image](https://user-images.githubusercontent.com/310185/162886996-6b8b58e1-b8ad-4b0f-a57a-3f8460028f7f.png)
+
+## Linux
+
+The script `game/compile_master.sh` does the job. It depends on python, cc65, and wine.
+
+```
+$ cd game/
+$ ./compile_master.sh
+```
 
 # Things of Note
 
